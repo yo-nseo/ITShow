@@ -1,23 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="index02.css">
-    <style type="text/css">
-  /* @media screen and (max-width: 768px) { body { background-color: lightgreen; } } */
 
-        /* @media(min-width:1025px){
-            #mm{
-                width:3000px;
-                height:100px;
-            }
-        } */
-</style>
+    <style type="text/css">
+    </style>
 
 </head>
+
 <body>
     <header>
         <nav>
@@ -33,15 +28,26 @@
             </ul>
         </nav>
     </header>
+    
 
     <div class="form_box">
-        <h3>게시물 올리기</h3>
-        <input class="input_field" type="text" placeholder="책 이름 입력" ><br>
-        <input class="input_field" type="text" placeholder="제목을 입력해주세요." ><br>
-        <textarea class="textarea_field" placeholder="내용을 입력해주세요."></textarea><br>
-        <button class="write_button">등록</button>
+        <h2>게시물 올리기</h2>
+        <br>
+        <select class="form-control" id="menu" name="menu" required>
+            <option value="" disabled selected>메뉴</option>
+            <option value="Thrill">스릴러</option>
+            <option value="Romance">로맨스</option>
+            <option value="Horror">호러</option>
+            <option value="other">...</option>
+        </select>
+
+
+            <input class="input_field" type="text" placeholder="책 이름 입력"><br>
+            <input class="input_field" type="text" placeholder="제목을 입력해주세요."><br>
+            <textarea class="textarea_field" placeholder="내용을 입력해주세요."></textarea><br>
+            <button class="write_button">등록</button>
     </div>
-<!-- 
+    <!-- 
     <article>
         <section class="banner">
             <img class="book01" src="book01.jpg">
@@ -53,4 +59,5 @@
 
     <footer></footer>
 </body>
+
 </html>
