@@ -1,4 +1,4 @@
-*{
+/* *{
     padding:0;
     margin:0;
     box-sizing:border-box;
@@ -77,11 +77,11 @@ nav{
 	border:1px solid rgb(100, 72, 72);
 	color: black;
 	transition: 0.4s ease;
-}
+} */
 
 
 /* 베스트 셀러*/
-.bestseller {
+/* .bestseller {
 	position: relative;
 	overflow: hidden;
 	padding: 20px;
@@ -124,7 +124,7 @@ nav{
 	height: 100%;
 	object-fit: cover;
   }
-  
+   */
   /* .card-btn {
 	position: absolute;
 	bottom: 10px;
@@ -151,7 +151,7 @@ nav{
 	color: #fff;
   } */
   
-  .bestseller-info {
+  /* .bestseller-info {
 	width: 100%;
 	height: 100px;
 	padding-top: 10px;
@@ -205,10 +205,10 @@ nav{
   .pre-btn:hover img,
   .nxt-btn:hover img {
 	opacity: 1;
-  }
+  } */
   
 /*메뉴바*/
-.category{
+/* .category{
 	position: relative;
 	z-index: -1;
 }
@@ -303,4 +303,4 @@ li.active{
 width: 100%;
 height: 100%;
 border-radius: 8px;
-}
+} */

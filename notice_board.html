@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        caption {
+            display: none;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .board_list_wrap {
+            padding: 50px;
+        }
+
+        .board_list {
+            width: 100%;
+            border-top: 2px solid green;
+        }
+
+        .board_list tr {
+            border-bottom: 1px solid #ccc;
+        }
+
+        .board_list th,
+        .board_list td {
+            padding: 10px;
+            font-size: 14px;
+        }
+
+        .board_list td {
+            text-align: center;
+        }
+
+        .board_list .tit {
+            text-align: left;
+        }
+
+        .board_list .tit:hover {
+            text-decoration: underline;
+        }
+
+        .board_list_wrap .paging {
+            margin-top: 20px;
+            text-align: center;
+            font-size: 0;
+        }
+
+        .board_list_wrap .paging a {
+            display: inline-block;
+            margin-left: 10px;
+            padding: 5px 10px;
+            border-radius: 100px;
+            font-size: 12px;
+        }
+
+        .board_list_wrap .paging a:first-child {
+            margin-left: 0;
+        }
+
+        .board_list_wrap .paging a.bt {
+            border: 1px solid #eee;
+            background: #eee;
+        }
+
+        .board_list_wrap .paging a.num {
+            border: 1px solid green;
+            font-weight: 600;
+            color: green;
+        }
+
+        .board_list_wrap .paging a.num.on {
+            background: green;
+            color: #fff;
+        }
+        </style>
+</head>
+
+<body>
+    
+    <div class="mask"></div>
+    <iframe src="./login.html" id="login-box" scrolling="no" frameborder="0"></iframe>
+
+    <!-- 자동으로 위로 올라가는 바-->
+    <div class="topBtn" style="display:none;">TOP</div>
+
+    <!-- 메뉴란 -->
+    <div class="header">
+        <div class="header-content w">
+            <div class="logo"><img src="#"></div>
+            <!-- 메뉴 -->
+            <ul class="header-tab">
+                <li>
+                    <a href="index.html">홈</a>
+                </li>
+                <li>
+                    <a href="notice_board.html">커뮤니티</a>
+                </li>
+                <li>
+                    <a href="#">내가 쓴글</a>
+                </li>
+                <li>
+                    <a href="writing.html">글쓰기</a>
+                </li>
+            </ul>
+            <div class="login">
+                <span>로그인</span><span>&nbsp;&nbsp;|&nbsp;&nbsp;</span><span>회원가입</span>
+            </div>
+        </div>
+    </div>
+    <div class="board_list_wrap" style="margin-top: 40px;">
+        <table class="board_list">
+            <caption>게시판 목록</caption>
+            <thead>
+                <tr>
+                    <th>번호</th>
+                    <th>제목</th>
+                    <th>글쓴이</th>
+                    <th>작성일</th>
+                    <th>장르</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>10</td>
+                    <td class="tit">
+                        <a href="#">html과 css로 웹사이트를 만듬</a>
+                    </td>
+                    <td>ooo</td>
+                    <td>2022-06-05</td>
+                    <td>스릴러</td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td class="tit">
+                        <a href="#">html과 css로 웹사이트를 만듬</a>
+                    </td>
+                    <td>ooo</td>
+                    <td>2022-06-05</td>
+                    <td>스릴러</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td class="tit">
+                        <a href="#">html과 css로 웹사이트를 만듬</a>
+                    </td>
+                    <td>ooo</td>
+                    <td>2022-06-05</td>
+                    <td>스릴러</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td class="tit">
+                        <a href="#">html과 css로 웹사이트를 만듬</a>
+                    </td>
+                    <td>ooo</td>
+                    <td>2022-06-05</td>
+                    <td>스릴러</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td class="tit">
+                        <a href="#">html과 css로 웹사이트를 만듬</a>
+                    </td>
+                    <td>ooo</td>
+                    <td>2022-06-05</td>
+                    <td>스릴러</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td class="tit">
+                        <a href="#">html과 css로 웹사이트를 만듬</a>
+                    </td>
+                    <td>ooo</td>
+                    <td>2022-06-05</td>
+                    <td>스릴러</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td class="tit">
+                        <a href="#">html과 css로 웹사이트를 만듬</a>
+                    </td>
+                    <td>ooo</td>
+                    <td>2022-06-04</td>
+                    <td>스릴러</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td class="tit">
+                        <a href="#">html과 css로 웹사이트를 만듬</a>
+                    </td>
+                    <td>ooo</td>
+                    <td>2022-06-03</td>
+                    <td>스릴러</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td class="tit">
+                        <a href="#">html과 css로 웹사이트를 만듬</a>
+                    </td>
+                    <td>ooo</td>
+                    <td>2022-06-02</td>
+                    <td>스릴러</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td class="tit">
+                        <a href="#">html과 css로 웹사이트를 만듬</a>
+                    </td>
+                    <td>ooo</td>
+                    <td>2022-06-01</td>
+                    <td>스릴러</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="paging">
+            <a href="#" class="bt">첫 페이지</a>
+            <a href="#" class="bt">이전 페이지</a>
+            <a href="#" class="num on">1</a>
+            <a href="#" class="num">2</a>
+            <a href="#" class="num">3</a>
+            <a href="#" class="bt">다음 페이지</a>
+            <a href="#" class="bt">마지막 페이지</a>
+        </div>
+    </div>
+</body>
+
+</html>

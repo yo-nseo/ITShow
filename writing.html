@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -47,6 +47,75 @@
             <textarea class="textarea_field" placeholder="내용을 입력해주세요."></textarea><br>
             <button class="write_button">등록</button>
     </div>
+    
+    <footer></footer>
+</body>
+
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
+    <script src="writing.js"></script>
+</head>
+
+<body>
+    
+    <div class="mask"></div>
+    <iframe src="./login.html" id="login-box" scrolling="no" frameborder="0"></iframe>
+
+    <!-- 자동으로 위로 올라가는 바-->
+    <div class="topBtn" style="display:none;">TOP</div>
+
+    <!-- 메뉴란 -->
+    <div class="header">
+        <div class="header-content w">
+            <div class="logo"><img src="#"></div>
+            <!-- 메뉴 -->
+            <ul class="header-tab">
+                <li>
+                    <a href="index.html">홈</a>
+                </li>
+                <li>
+                    <a href="notice_board.html">커뮤니티</a>
+                </li>
+                <li>
+                    <a href="">내가 쓴글</a>
+                </li>
+                <li>
+                    <a href="writing.html">글쓰기</a>
+                </li>
+            </ul>
+            <div class="login">
+                <span>로그인</span><span>&nbsp;&nbsp;|&nbsp;&nbsp;</span><span>회원가입</span>
+            </div>
+        </div>
+    </div>
+    
+<div style="margin-top:40px">
+    <div class="form_box">
+        <h2>게시물 올리기</h2>
+        <br>
+        <select class="form-control" id="menu" name="menu" required>
+            <option value="" disabled selected>메뉴</option>
+            <option value="Thrill">스릴러</option>
+            <option value="Romance">로맨스</option>
+            <option value="Horror">호러</option>
+            <option value="other">...</option>
+        </select>
+
+
+            <input class="input_field" type="text" placeholder="책 이름 입력"><br>
+            <input class="input_field" type="text" placeholder="제목을 입력해주세요."><br>
+            <textarea class="textarea_field" placeholder="내용을 입력해주세요."></textarea><br>
+            <button class="write_button">등록</button>
+    </div>
     <!-- 
     <article>
         <section class="banner">
@@ -58,6 +127,7 @@
     </article> -->
 
     <footer></footer>
+</div>
 </body>
 
 </html>
