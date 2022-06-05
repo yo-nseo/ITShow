@@ -616,7 +616,11 @@ div.footer-content {
     overflow: hidden;
 }
 
-/* 글쓰기 */
+
+
+
+
+/* 글쓰기  css*/
 .form_box {
     background-color: #ffffff;
     margin: 30px;
@@ -641,13 +645,32 @@ div.footer-content {
     width: 100%;
     height: 160px;
 }
-.write_button {
+.write_button1 {
     background-color: #475d9f;
     border: 1px solid #323f6b;
     color: #ffffff;
     border-radius: 4px;
     padding: 2px 8px;
     font-soze: 18px;
+    margin-top: 30;
+    margin-left: 10px;
 }
-
-
+.write_button2 {
+    background-color: #475d9f;
+    border: 1px solid #323f6b;
+    color: #ffffff;
+    border-radius: 4px;
+    padding: 2px 8px;
+    font-soze: 18px;
+    margin-top: 30;
+    margin-left: 10px;
+}
+.form_box{
+    margin: 5px; 
+    margin-left: 240px; 
+    margin-right: 250px; 
+    height: 500px;
+}
+.input_field{
+    margin-bottom: 13px;
+}
