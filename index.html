@@ -10,12 +10,6 @@
 </head>
 
 <body>
-    
-    <div class="mask"></div>
-    <iframe src="./login.html" id="login-box" scrolling="no" frameborder="0"></iframe>
-
-    <!-- 자동으로 위로 올라가는 바-->
-    <div class="topBtn" style="display:none;">TOP</div>
 
     <!-- 메뉴란 -->
     <div class="header">
@@ -37,8 +31,7 @@
                 </li>
             </ul>
             <div class="login">
-                <a href="login.html">로그인 |</a>
-                <a href="sing_up.html">회원가입</a>
+                <button type="button" onClick="location.href='login.html'">Login</button>
             </div>
         </div>
     </div>
@@ -47,237 +40,286 @@
             <!-- 이미지 슬라이드 -->
             <div class="focus">
                 <ul>
-                    <li style="display:block"><img src="#" alt=""></li>
-                    <li><img src="#" alt=""></li>
-                    <li><img src="#" alt=""></li>
-                    <li><img src="#" alt=""></li>
-                    <li><img src="#" alt=""></li>
+                    <li style="display:block"><img src="images/book01.jpg" alt=""></li>
+                    <li><img src="images/book01.jpg" alt=""></li>
+                    <li><img src="images/book01.jpg" alt=""></li>
+                    <li><img src="images/book01.jpg" alt=""></li>
+                    <li><img src="images/book01.jpg" alt=""></li>
                 </ul>
                 <div class="circle"></div>
             </div>
-    
-    
-            <!--  -->
-            <div class="message">
-                <div class="top-left">
+        </div>
+    </div>
+    <!--  -->
+    <div class="message">
+        <div class="top-left" style="background-color:greenyellow">
+            <ul>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+        <!-- -->
+        <div class="top-right" style="background-color:aqua">
+            <div class="top-right-header">
+                <h2></h2>
+                <span>&nbsp;&nbsp;</span>
+            </div>
+            <div class="top-right-content">
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- 베스트 셀러-->
+    <div class="recommend w clear">
+        <div class="re-header">
+            <div class="re-header-left">
+                <span>베스트 셀러</span>
+            </div>
+            <div class="re-header-right">
+                <span>오늘의 책</span>
+            </div>
+        </div>
+        <div class="re-content">
+            <div class="re-content-left">
+                <div class="box-header-content">
+                    <div class="img">
+                        <img src="./images/book01.jpg" alt="">
+                    </div>
+                    <div class="text">
+                        <h2>감정 어휘</h2>
+                        <span>유선경</span>
+                        <p>모호한 감정을 선명하게 밝혀 내 삶을 살게 해주는 말 공부...</p>
+                    </div>
+                </div>
+                <div class="box-header-content-right">
                     <ul>
-                        <li></li>
-                        <li></li>
+                        <li>
+                            <a href="javascript:;">
+                                <div class="imgs">
+                                    <img src="./images/book02.jpg" alt="">
+                                </div>
+                                <div class="box-header-content-text">
+                                    <h3>어제보다 나은 사람</h3>
+                                    <span>최갑수</span>
+                                    <p>나를 지키며 더 나은 일과 삶을 향해 나아가는 법...</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <div class="imgs">
+                                    <img src="./images/book03.jpg" alt="">
+                                </div>
+                                <div class="box-header-content-text">
+                                    <h3>외모 자존감 수업</h3>
+                                    <span>부운주</span>
+                                    <p>외모에 예민한 당신을 위한 심리 기술과 실천법...</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <div class="imgs">
+                                    <img src="./images/book04.jpg" alt="">
+                                </div>
+                                <div class="box-header-content-text">
+                                    <h3>불편한 편의점</h3>
+                                    <span>김호연</span>
+                                    <p>불편한데 자꾸 가고 싶은 편의점이 있다...</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <div class="imgs">
+                                    <img src="./images/book05.jpg" alt="">
+                                </div>
+                                <div class="box-header-content-text">
+                                    <h3>긴긴밤</h3>
+                                    <span>루리</span>
+                                    <p>수만은 긴긴밤을 함께했으니 '우리'라고 불리는 것은 당연했다...
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <div class="imgs">
+                                    <img src="./images/book06.jpg" alt="">
+                                </div>
+                                <div class="box-header-content-text">
+                                    <h3>책들의 부엌</h3>
+                                    <span>김지혜</span>
+                                    <p>갓 지은 맛있는 책 냄새가 폴폴 풍기는 여기는 '소양리 북스 키친'입니다...</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <div class="imgs">
+                                    <img src="./images/book07.jpg" alt="">
+                                </div>
+                                <div class="box-header-content-text">
+                                    <h3>밝은 밤</h3>
+                                    <span>최은영</span>
+                                    <p>"슬픔을 위로하고 감싸주는 더 큰 슬픔의 힘"<br>-오정희(소설가)...</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <div class="imgs">
+                                    <img src="./images/book08.jpg" alt="">
+                                </div>
+                                <div class="box-header-content-text">
+                                    <h3>지구 끝의 온실</h3>
+                                    <span>김초엽</span>
+                                    <p>도저히 사랑할 수 없는 세계를 마침내 재건하는 사람들의 마음...</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <div class="imgs">
+                                    <img src="./images/book09.jpg" alt="">
+                                </div>
+                                <div class="box-header-content-text">
+                                    <h3>새의 선물</h3>
+                                    <span>매트 헤이그 저/노진선 역</span>
+                                    <p>우리가 열광하고 아꼈던 그때 그 여자아이와 다시 만나다...</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <div class="imgs">
+                                    <img src="./images/book10.jpg" alt="">
+                                </div>
+                                <div class="box-header-content-text">
+                                    <h3>호흡</h3>
+                                    <span>에드거 윌리엄스 저/황선영 역</span>
+                                    <p>인간에게 영감을 불어넣는 '숨'의 역사...</p>
+                                </div>
+                            </a>
+                        </li>
                     </ul>
                 </div>
-                <!-- -->
-                <div class="top-right">
-                    <div class="top-right-header">
-                        <h2></h2>
-                        <span>&nbsp;&nbsp;</span>
-                    </div>
-                    <div class="top-right-content">
-                        <p></p>
-                        <p></p>
-                        <p></p>
-                        <p></p>
-                    </div>
-                </div>
             </div>
         </div>
-        
-        <!-- 베스트 셀러-->
-        <div class="recommend w clear">
-            <div class="re-header">
-                <div class="re-header-left">
-                    <span>베스트 셀러</span>
+    </div>
+
+    <!-- 작가 소개-->
+    <div class="new_Speak_writer w clear">
+        <div class="new_Speak_writer_header">
+            <div class="text-left">작가 소개</div>
+        </div>
+
+        <div class="new_Speak_writer_content">
+            <div class="new_Speak_item">
+                <div class="Speak_item_radius_img">
+                    <img src="./images/writer01.jpg" alt="">
                 </div>
-                <div class="re-header-right">
-                    <span>오늘의 책</span>
-                </div>
+                <p>손원평</p>
+                <p>대표작《아몬드》</p>
             </div>
-            <div class="re-content">
-                <div class="re-content-left">
-                    <div class="box-header-content">
-                        <div class="img">
-                            <img src="./images/book01.jpg" alt="">
-                        </div>
-                        <div class="text">
-                            <h2>감정 어휘</h2>
-                            <span>유선경</span>
-                            <p>모호한 감정을 선명하게 밝혀 내 삶을 살게 해주는 말 공부...</p>
-                        </div>
-                    </div>
-                    <div class="box-header-content-right">
-                        <ul>
-                            <li>
-                                <a href="javascript:;">
-                                    <div class="imgs">
-                                        <img src="./images/book02.jpg" alt="">
-                                    </div>
-                                    <div class="box-header-content-text">
-                                        <h3>어제보다 나은 사람</h3>
-                                        <span>최갑수</span>
-                                        <p>나를 지키며 더 나은 일과 삶을 향해 나아가는 법...</p>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="javascript:;">
-                                    <div class="imgs">
-                                        <img src="./images/book03.jpg" alt="">
-                                    </div>
-                                    <div class="box-header-content-text">
-                                        <h3>외모 자존감 수업</h3>
-                                        <span>부운주</span>
-                                        <p>외모에 예민한 당신을 위한 심리 기술과 실천법...</p>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="javascript:;">
-                                    <div class="imgs">
-                                        <img src="./images/book04.jpg" alt="">
-                                    </div>
-                                    <div class="box-header-content-text">
-                                        <h3>불편한 편의점</h3>
-                                        <span>김호연</span>
-                                        <p>불편한데 자꾸 가고 싶은 편의점이 있다...</p>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="javascript:;">
-                                    <div class="imgs">
-                                        <img src="./images/book05.jpg" alt="">
-                                    </div>
-                                    <div class="box-header-content-text">
-                                        <h3>긴긴밤</h3>
-                                        <span>루리</span>
-                                        <p>수만은 긴긴밤을 함께했으니 '우리'라고 불리는 것은 당연했다...
-                                        </p>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="javascript:;">
-                                    <div class="imgs">
-                                        <img src="./images/book06.jpg" alt="">
-                                    </div>
-                                    <div class="box-header-content-text">
-                                        <h3>책들의 부엌</h3>
-                                        <span>김지혜</span>
-                                        <p>갓 지은 맛있는 책 냄새가 폴폴 풍기는 여기는 '소양리 북스 키친'입니다...</p>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="javascript:;">
-                                    <div class="imgs">
-                                        <img src="./images/book07.jpg" alt="">
-                                    </div>
-                                    <div class="box-header-content-text">
-                                        <h3>밝은 밤</h3>
-                                        <span>최은영</span>
-                                        <p>"슬픔을 위로하고 감싸주는 더 큰 슬픔의 힘"<br>-오정희(소설가)...</p>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="javascript:;">
-                                    <div class="imgs">
-                                        <img src="./images/book08.jpg" alt="">
-                                    </div>
-                                    <div class="box-header-content-text">
-                                        <h3>지구 끝의 온실</h3>
-                                        <span>김초엽</span>
-                                        <p>도저히 사랑할 수 없는 세계를 마침내 재건하는 사람들의 마음...</p>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="javascript:;">
-                                    <div class="imgs">
-                                        <img src="./images/book09.jpg" alt="">
-                                    </div>
-                                    <div class="box-header-content-text">
-                                        <h3>새의 선물</h3>
-                                        <span>매트 헤이그 저/노진선 역</span>
-                                        <p>우리가 열광하고 아꼈던 그때 그 여자아이와 다시 만나다...</p>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="javascript:;">
-                                    <div class="imgs">
-                                        <img src="./images/book10.jpg" alt="">
-                                    </div>
-                                    <div class="box-header-content-text">
-                                        <h3>호흡</h3>
-                                        <span>에드거 윌리엄스 저/황선영 역</span>
-                                        <p>인간에게 영감을 불어넣는 '숨'의 역사...</p>
-                                    </div>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
+            <div class="new_Speak_item">
+                <div class="Speak_item_radius_img">
+                    <img src="./images/writer02.jpg" alt="">
                 </div>
+                <p>김초엽</p>
+                <p>대표작《지구 끝의 온실》</p>
+            </div>
+            <div class="new_Speak_item">
+                <div class="Speak_item_radius_img">
+                    <img src="./images/writer03.jpg" alt="">
+                </div>
+                <p>정세랑</p>
+                <p>대표작《이만큼 가까이》</p>
+            </div>
+            <div class="new_Speak_item">
+                <div class="Speak_item_radius_img">
+                    <img src="./images/writer04.jpg" alt="">
+                </div>
+                <p>최은영</p>
+                <p>대표작《밝은 밤》</p>
+            </div>
+            <div class="new_Speak_item">
+                <div class="Speak_item_radius_img">
+                    <img src="./images/writer05.jpg" alt="">
+                </div>
+                <p>한강</p>
+                <p>대표작《소년이 온다》</p>
+            </div>
+            <div class="new_Speak_item">
+                <div class="Speak_item_radius_img">
+                    <img src="./images/writer06.jpg" alt="">
+                </div>
+                <p>이희영</p>
+                <p>대표작《페인트》</p>
             </div>
         </div>
-    
-        <!-- 작가 소개-->
-        <div class="new_Speak_writer w clear">
-            <div class="new_Speak_writer_header">
-                <div class="text-left">작가 소개</div>
-            </div>
-    
-            <div class="new_Speak_writer_content">
-                <div class="new_Speak_item">
-                    <div class="Speak_item_radius_img">
-                        <img src="./images/writer01.jpg" alt="">
-                    </div>
-                    <p>손원평</p>
-                    <p>대표작《아몬드》</p>
-                </div>
-                <div class="new_Speak_item">
-                    <div class="Speak_item_radius_img">
-                        <img src="./images/writer02.jpg" alt="">
-                    </div>
-                    <p>김초엽</p>
-                    <p>대표작《지구 끝의 온실》</p>
-                </div>
-                <div class="new_Speak_item">
-                    <div class="Speak_item_radius_img">
-                        <img src="./images/writer03.jpg" alt="">
-                    </div>
-                    <p>정세랑</p>
-                    <p>대표작《이만큼 가까이》</p>
-                </div>
-                <div class="new_Speak_item">
-                    <div class="Speak_item_radius_img">
-                        <img src="./images/writer04.jpg" alt="">
-                    </div>
-                    <p>최은영</p>
-                    <p>대표작《밝은 밤》</p>
-                </div>
-                <div class="new_Speak_item">
-                    <div class="Speak_item_radius_img">
-                        <img src="./images/writer05.jpg" alt="">
-                    </div>
-                    <p>한강</p>
-                    <p>대표작《소년이 온다》</p>
-                </div>
-                <div class="new_Speak_item">
-                    <div class="Speak_item_radius_img">
-                        <img src="./images/writer06.jpg" alt="">
-                    </div>
-                    <p>이희영</p>
-                    <p>대표작《페인트》</p>
-                </div>
-            </div>
+    </div>
+
+    <!-- footer -->
+    <div class="footer">
+        <div class="footer-content w">
+            <div class="logo_img"><img src="#" alt=""></div>
         </div>
-    
-        <!-- footer -->
-        <div class="footer">
-            <div class="footer-content w">
-                <div class="logo_img"><img src="#" alt=""></div>
-            </div>
-        </div>
-</div>
+    </div>
+
+    </div>
+
+    <script>
+
+        // 이미지 슬라이드
+        let focus = document.querySelector('.focus');
+        let focus_li = focus.querySelectorAll('li');
+        let circle = document.querySelector('.circle');
+        let num = 0;
+        for (let i = 0; i < focus_li.length; i++) {
+            let span = document.createElement('span');
+            circle.appendChild(span);
+        }
+        circle.children[num].className = 'circleColor';
+        for (let i = 0; i < circle.children.length; i++) {
+            circle.children[i].setAttribute('index', i);
+            circle.children[i].onclick = function () {
+                let index = this.getAttribute('index');
+                for (let i = 0; i < circle.children.length; i++) {
+                    circle.children[i].className = '';
+                    focus_li[i].style.display = 'none';
+                }
+                this.className = 'circleColor';
+                focus_li[index].style.display = 'block';
+                num = index;
+            }
+        }
+        // 이미지 슬라이드 시간 설정
+        let timer = null;
+        actionInterVal();
+
+        function actionInterVal() {
+            timer = setInterval(function () {
+                num++;
+                if (num >= focus_li.length) {
+                    num = 0;
+                }
+                for (let i = 0; i < focus_li.length; i++) {
+                    focus_li[i].style.display = 'none';
+                    circle.children[i].className = '';
+                }
+                focus_li[num].style.display = 'block';
+                circle.children[num].className = 'circleColor';
+            }, 2000);
+        }
+    </script>
+
+    </div>
 </body>
+
 </html>

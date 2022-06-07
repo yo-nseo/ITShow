@@ -17,6 +17,17 @@ input {
     outline: none;
 }
 
+body {
+    overflow: scroll;
+    /* IE scroll 숨김 */
+    -ms-overflow-style: none;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+    width: 0 !important;
+}
+
 body,
 html {
     font-size: 14px;
@@ -36,48 +47,14 @@ html {
     margin: 0 auto;
 }
 
-.mask {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, .6);
-    z-index: 5;
-    display: none;
-}
-
 div.isBlock {
     margin-top: 67px;
 }
-
-
-
-
-div.topBtn {
-    position: fixed;
-    bottom: 60px;
-    right: 60px;
-    width: 73px;
-    border-radius: 30px;
-    color: #fff;
-    font-size: 16px;
-    background: -webkit-linear-gradient(45deg, skyblue, green);
-    z-index: 20;
-    text-align: center;
-    padding: 20px;
-    cursor: pointer;
-}
-
-
-
 
 div.top {
     position: relative;
     width: 100%;
 }
-
-
 
 div.header {
     position: fixed;
@@ -86,7 +63,7 @@ div.header {
     z-index: 10;
     width: 100%;
     height: 67px;
-    background-color: #000;
+    background-color: #62492b;
 }
 
 div.logo {
@@ -95,9 +72,17 @@ div.logo {
     margin-right: 90px;
 }
 
+.header-tab {
+    padding-left: 200px;
+}
+
 div.logo img {
     width: 100%;
     height: 100%;
+}
+
+div.header {
+    background-color: #62492b;
 }
 
 div.header-content {
@@ -138,8 +123,19 @@ div.login {
     letter-spacing: 10px;
 }
 
+div.login button {
+    width: 70px;
+    height: 30px;
+    color: #54252d;
+    border-radius: 20px;
+    border: none;
+}
 
-
+div.login button:hover {
+    background-color: #62492b;
+    color: white;
+    border: 1px solid white;
+}
 
 div.focus {
     position: relative;
@@ -157,22 +153,38 @@ div.focus ul li {
 
 div.focus ul li img {
     width: 100%;
-    height: 100%;
+    height: 350px;
 }
 
 @keyframes isBlock {
     0% {
         opacity: 0;
     }
+
     25% {
         opacity: 0.3;
     }
+
     50% {
         opacity: 0.5;
     }
+
     75% {
         opacity: 0.8;
     }
+
+    25% {
+        opacity: 0.3;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    75% {
+        opacity: 0.8;
+    }
+
     100% {
         opacity: 1;
     }
@@ -197,15 +209,12 @@ div.circle span {
 }
 
 div.circle .circleColor {
-    background-color: red;
+    background-color: #62492b;
 }
-
-
-
 
 div.message {
     position: absolute;
-    bottom: -260px;
+    bottom: -150px;
     left: 50%;
     transform: translateX(-50%);
     width: 1174px;
@@ -267,9 +276,6 @@ div.top-right-header span {
 div.top-right-content p {
     line-height: 33px;
 }
-
-
-
 
 div.recommend {
     margin-top: 330px;
@@ -414,8 +420,13 @@ div.box-header-content-text h2 {
     color: #000;
 }
 
-div.box-header-content-text h3{
-    color:black;
+div.box-header-content-text h3 {
+    color: black;
+}
+
+div.box-header-content-text h3 {
+    color: black;
+
 }
 
 div.box-header-content-text span {
@@ -429,7 +440,6 @@ div.box-header-content-text p {
     font-size: 12px;
     color: #9999;
 }
-
 
 div.re-content-message {
     padding: 20px;
@@ -465,9 +475,6 @@ h3.item {
     display: none;
 }
 
-
-
-
 div.left-List {
     float: left;
     width: 153px;
@@ -490,15 +497,9 @@ ul.ULList li:hover {
 
 .ULListLiStyle {
     background-color: rgb(255, 240, 234);
-    color: orange!important;
+    color: orange !important;
     border-right: 2px solid rgb(250, 103, 37);
 }
-
-
-
-
-
-
 
 div.prefecture-author {
     width: 100%;
@@ -537,9 +538,6 @@ div.aut-btn {
     background: linear-gradient(117deg, #ff9000, #ff4f00);
     margin-top: 60px;
 }
-
-
-
 
 div.new_Speak_writer {
     margin-top: 50px;
@@ -607,17 +605,15 @@ div.new_Speak_item p:last-child {
 
 div.footer {
     margin-top: 90px;
-    background-color: rgb(241, 241, 241);   
+    background-color: rgb(241, 241, 241);
     height: 100px;
 }
 
 div.footer-content {
     position: relative;
     overflow: hidden;
+
 }
-
-
-
 
 
 /* 글쓰기  css*/

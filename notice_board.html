@@ -27,12 +27,16 @@
         }
 
         .board_list_wrap {
+
+            padding: 0px 50px 50px 50px;
+
             padding: 50px;
+
         }
 
         .board_list {
             width: 100%;
-            border-top: 2px solid green;
+            border-top: 2px solid #62492b;
         }
 
         .board_list tr {
@@ -81,25 +85,27 @@
         }
 
         .board_list_wrap .paging a.num {
-            border: 1px solid green;
+
+            border: 1px solid #62492b;
             font-weight: 600;
-            color: green;
+            color: #62492b;
         }
 
         .board_list_wrap .paging a.num.on {
-            background: green;
+            background: #62492b;
+            border: 1px solid #62492b;
+            font-weight: 600;
+            color: #62492b;
+        }
+
+        .board_list_wrap .paging a.num.on {
+            background: #62492b;
             color: #fff;
         }
         </style>
 </head>
 
-<body>
-    
-    <div class="mask"></div>
-    <iframe src="./login.html" id="login-box" scrolling="no" frameborder="0"></iframe>
-
-    <!-- 자동으로 위로 올라가는 바-->
-    <div class="topBtn" style="display:none;">TOP</div>
+<body style="overflow:hidden">
 
     <!-- 메뉴란 -->
     <div class="header">
@@ -121,8 +127,10 @@
                 </li>
             </ul>
             <div class="login">
-                <span>로그인</span><span>&nbsp;&nbsp;|&nbsp;&nbsp;</span><span>회원가입</span>
+
+                <button type="button" onClick="location.href='login.html'">Login</button>
             </div>
+        
         </div>
     </div>
     <div class="board_list_wrap" style="margin-top: 40px;">
@@ -138,15 +146,6 @@
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <td>10</td>
-                    <td class="tit">
-                        <a href="#">html과 css로 웹사이트를 만듬</a>
-                    </td>
-                    <td>ooo</td>
-                    <td>2022-06-05</td>
-                    <td>스릴러</td>
-                </tr>
                 <tr>
                     <td>9</td>
                     <td class="tit">

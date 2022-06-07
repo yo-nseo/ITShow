@@ -1,145 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        *{
-    text-decoration: none;
-}
-body{
-    margin: 0;
-    width: 100vw;
-    height: 100vh;
-    background: #ecf0f3;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    place-items: center;
-    overflow: hidden;
-    font-family: sans-serif;
-}
+        * {
+            text-decoration: none;
+        }
 
-.container{
-    width: 350px;
-    height: 520px;
-    background: #ecf0f3;
-    padding: 40px;
-    border-radius: 20px;
-    box-sizing: border-box;
-    box-shadow: 14px 14px 20px #cbced1, -14px -14px 20px white;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-}
+        body {
+            margin: 0;
+            width: 100vw;
+            height: 100vh;
+            background: #ecf0f3;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            place-items: center;
+            overflow: hidden;
+            font-family: sans-serif;
+        }
 
-.logo{
-    height: 100px;
-    width: 100px;
-    background-size: 160px;
-    background-position: -30px;
-    margin: auto;
-    border-radius: 50%;
-    box-sizing: border-box;
-    box-shadow: 7px 7px 10px #cbced1, -7px, -7px, 10px white;
-}
+        .container {
+            width: 350px;
+            height: 520px;
+            background: #ecf0f3;
+            padding: 40px;
+            border-radius: 20px;
+            box-sizing: border-box;
+            box-shadow: 14px 14px 20px #cbced1, -14px -14px 20px white;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
 
-.icon{
-    height: 100px;
-    width: 100px;
-    border-radius: 50%;
-}
+        .logo {
+            height: 100px;
+            width: 100px;
+            background-size: 160px;
+            background-position: -30px;
+            margin: auto;
+            border-radius: 50%;
+            box-sizing: border-box;
+            box-shadow: 7px 7px 10px #cbced1, -7px, -7px, 10px white;
+        }
 
-.title{
-    margin-top: 10px;
-    font-weight: 900;
-    font-size: 1.6em;
-    color:  #54252d;
-    letter-spacing: 1px; 
-}
+        .icon {
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+        }
 
-.inputs{
-    text-align: left;
-    margin-top: 30px;
-}
+        .title {
+            margin-top: 10px;
+            font-weight: 900;
+            font-size: 1.6em;
+            color: #54252d;
+            letter-spacing: 1px;
+        }
 
-label, input, button{
-    display: block;
-    width: 100%;
-    padding: 0;
-    border: none;
-    outline: none;
-    box-sizing: border-box;
-}
+        .inputs {
+            text-align: left;
+            margin-top: 30px;
+        }
 
-label{
-    margin-bottom: 4px;
-    font-size: 16px;
-}
+        label,
+        input,
+        button {
+            display: block;
+            width: 100%;
+            padding: 0;
+            border: none;
+            outline: none;
+            box-sizing: border-box;
+        }
 
-label:nth-of-type(2){
-    margin-top: 14px;
-}
+        label {
+            margin-bottom: 4px;
+            font-size: 16px;
+        }
 
-input{
-    background: #ecf0f3;
-    padding: 10px;
-    padding-left: 20px;
-    font-size: 14px;
-    border-radius: 50px;
-    height: 50px;
-    box-shadow: inset 6px 6px 6px #cbced1, inset -6px -6px 6px white;
-}
-input::placeholder{
-    color: gray;
-}
+        label:nth-of-type(2) {
+            margin-top: 14px;
+        }
 
-button{
-    margin-top: 20px;
-    background: #bca283;
-    height: 40px;
-    border-radius: 20px;
-    cursor: pointer;
-    font-weight: 900;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    letter-spacing: 1px;
-    box-shadow: 6px 6px 6px #cbced1, -6px, -6px, 6px, white;
-}
+        input {
+            background: #ecf0f3;
+            padding: 10px;
+            padding-left: 20px;
+            font-size: 14px;
+            border-radius: 50px;
+            height: 50px;
+            box-shadow: inset 6px 6px 6px #cbced1, inset -6px -6px 6px white;
+        }
 
-button:hover{
-    box-shadow: none;
-}
+        input::placeholder {
+            color: gray;
+        }
 
-.line{
-    color: #54252d;
-    font-size: 13px;
-    letter-spacing: 0.2px;
-    margin-top: 15px;
-}
+        button {
+            margin-top: 20px;
+            background: #bca283;
+            height: 40px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-weight: 900;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            letter-spacing: 1px;
+            box-shadow: 6px 6px 6px #cbced1, -6px, -6px, 6px, white;
+        }
 
-a{
-    color: #54252d;
-}
+        button:hover {
+            box-shadow: none;
+        }
+
+        .line {
+            color: #54252d;
+            font-size: 13px;
+            letter-spacing: 0.2px;
+            margin-top: 15px;
+        }
+
+        a {
+            color: #54252d;
+        }
     </style>
 </head>
+
 <body>
     <div class="container">
         <div class="logo">
             <img class="icon" src="icon.jpg">
         </div>
-
         <div class="title"></div>
 
         <div class="inputs">
             <label>EMAIL</label>
-            <input type="text" name="email" placeholder="example@email.com"/>
+            <input type="text" name="email" placeholder="example@email.com" />
             <label>PASSWORD</label>
-            <input type="password" name="password" placeholder="Enter password"/>
+            <input type="password" name="password" placeholder="Enter password" />
 
             <button type="submit">LOGIN</button>
         </div>
@@ -149,4 +154,5 @@ a{
         </div>
     </div>
 </body>
+
 </html>
