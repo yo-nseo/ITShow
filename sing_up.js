@@ -1,8 +1,8 @@
 // const db = require('./database');
-// const mysql = require('mysql');
-// const dbConfig = require('./database')
-import mysql from 'mysql';
-import dbConfig from './database';
+const mysql = require('mysql');
+const dbConfig = require('./database')
+// import mysql from 'mysql';
+// import dbConfig from './database';
 
 const dbOptions = {
     host : dbConfig.host,
