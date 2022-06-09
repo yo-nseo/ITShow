@@ -618,12 +618,31 @@ div.footer-content {
 
 /* 글쓰기  css*/
 .form_box {
-    background-color: #ffffff;
+    background-color: white;
     margin: 30px;
     border-radius: 10px;
-    border: 1px solid #ddd;
+    border: 1px solid #62492b;
     padding: 10px;
 }
+
+/* .form_smail_box{
+    height: 430px;
+    position: relative;
+    background-color: white;
+    border: 2px solid #62492b;
+    border-radius: 10px;
+} */
+.form_box h2 {
+    font-family: Gulim;
+}
+
+.form_box textarea {
+    height: 250px;
+    resize: none;
+}
+
+.form_box select {}
+
 .input_field {
     border: 1px solid #ddd;
     border-radius: 4px;
@@ -632,6 +651,7 @@ div.footer-content {
     font-size: 14px;
     width: 100%;
 }
+
 .textarea_field {
     border: 1px solid #ddd;
     border-radius: 4px;
@@ -641,32 +661,28 @@ div.footer-content {
     width: 100%;
     height: 160px;
 }
-.write_button1 {
-    background-color: #475d9f;
-    border: 1px solid #323f6b;
+
+div.form_box button {
+    width: 60px;
+    height: 30px;
+    background-color: #62492b;
+    border: none;
     color: #ffffff;
-    border-radius: 4px;
+    border-radius: 25px;
     padding: 2px 8px;
-    font-size: 18px;
+    font-size: 15px;
     margin-top: 30;
     margin-left: 10px;
 }
-.write_button2 {
-    background-color: #475d9f;
-    border: 1px solid #323f6b;
-    color: #ffffff;
-    border-radius: 4px;
-    padding: 2px 8px;
-    font-size: 18px;
-    margin-top: 30;
-    margin-left: 10px;
-}
-.form_box{
-    margin: 5px; 
-    margin-left: 240px; 
-    margin-right: 250px; 
+
+.form_box {
+    margin: 5px;
+    margin-left: 240px;
+    margin-right: 250px;
     height: 500px;
 }
-.input_field{
+
+.input_field {
     margin-bottom: 13px;
+
 }
