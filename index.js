@@ -11,10 +11,11 @@ app.use(express.static('public'));
 
 app.get('/',(req,res)=>res.sendFile(path.resolve("index.html")));
 
-//res.sendFile(__dirname+'index.html');
+res.sendFile(__dirname+'index.html');
 
 app.listen(port, ()=>console.log(`Server Start. Port : ${port}`))
 
 const mysql = require('./database')();
 const connection = mysql.init();
 mysql.db_open(connection);
+
