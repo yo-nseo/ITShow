@@ -17,5 +17,5 @@ app.listen(port, ()=>console.log(`Server Start. Port : ${port}`))
 
 const mysql = require('./database')();
 const connection = mysql.init();
-mysql.db_open(connection);
+mysql.db_open(connection); 
 
