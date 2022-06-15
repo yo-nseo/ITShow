@@ -38,6 +38,7 @@ function checkPW(){
         //     if(result[0]) alert("존재하는 아이디");
         // })
 
+        // -------SQL 문-------
         // var sql = 'INSERT INTO itshow_db.user_table(`u_id`, `u_pw`) VALUES (?, ?)';
         // conn.query(sql, ['id', 'pw1'], function (error, results, fields) {
         //     if (error){ console.log(error); }
