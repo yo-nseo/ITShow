@@ -12,18 +12,29 @@
 <body>
     <div class="container">
         <div class="logo">
-            <img class="icon" src="icon.jpg">
+            <img class="icon" src="images/logo.png">
         </div>
         <div class="title"></div>
 
+
         <div class="inputs">
+            <form action="/login" method="post">
+                <label>ID</label>
+                <input type="text" name="id" placeholder="ID" />
+                <label>PASSWORD</label>
+                <input type="password" name="pw" placeholder="Enter password" />
+
+                <button type="submit" onclick="location.href='index.html'">LOGIN</button>
+            </form>
+        </div>
+        <!-- <div class="inputs">
             <label>ID</label>
             <input type="text" name="id" placeholder="ID" />
             <label>PASSWORD</label>
-            <input type="password" name="password" placeholder="Enter password" />
+            <input type="password" name="pw" placeholder="Enter password" />
 
             <button type="submit" onclick="location.href='index.html'">LOGIN</button>
-        </div>
+        </div> -->
         <div class="line">
             <a href="sing_up.html" style="margin-right: 40px;">Sign up</a>
             <a href="#">Logout</a>
