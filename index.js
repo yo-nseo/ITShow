@@ -19,3 +19,23 @@ const mysql = require('./database')();
 const connection = mysql.init();
 mysql.db_open(connection); 
 
+app.post('/login', function(request, response) {
+    var username = request.body.id;
+    var password = request.body.pw;
+    if (username && password) {
+        connection.query('SELECT * FROM user_table WHERE u_id = ? AND u_pw = ? ',[username, password], (err, results, fields) =>{
+            if (err){
+                throw err;
+            }else if (results.length>0){
+                response.send('<script type="text/javascript">alert("환영합니다!"); document.location.href="index.html"</script>');
+                response.end();
+            }else{
+                response.send('<script>alert("로그인 정보가 일치하지 않습니다."); document.location.href="/login";</script>');
+            }
+            //connection.end(); // DB 연결 끊기
+        });
+    } else {        
+        response.send('<script type="text/javascript">alert("username과 password를 입력하세요!"); document.location.href="/login";</script>');    
+        response.end();
+    }
+});
