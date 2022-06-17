@@ -9,7 +9,10 @@ app.use(express.urlencoded({extended : true})) ;
 app.use(userRouter);
 app.use(express.static('public'));
 
-app.get('/',(req,res)=>res.sendFile(path.resolve("index.html")));
+app.get('/',(req,res)=> {
+    res.sendFile(path.resolve("index.html"))
+    //res.render('index.html');
+});
 
 // res.sendFile(__dirname+'index.html');
 
@@ -27,7 +30,7 @@ app.post('/login', function(request, response) {
             if (err){
                 throw err;
             }else if (results.length>0){
-                response.send('<script type="text/javascript">alert("환영합니다!"); document.location.href="index.html"</script>');
+                response.send('<script type="text/javascript">alert("환영합니다!"); document.location.href="/"</script>');
                 response.end();
             }else{
                 response.send('<script>alert("로그인 정보가 일치하지 않습니다."); document.location.href="/login";</script>');
