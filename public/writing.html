@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
+<head> 
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,7 +14,11 @@
     <!-- 메뉴란 -->
     <div class="header">
         <div class="header-content w">
+
             <div class="logo"><img src="images/logo.png"></div>
+
+            <div class="logo"><img src="./images/logo.png" style="weight: 100px; height: 100px;" ></div>
+
             <!-- 메뉴 -->
             <ul class="header-tab" style="position: relative; left: 200px;">
                 <li>
@@ -24,7 +28,7 @@
                     <a href="notice_board.html">커뮤니티</a>
                 </li>
                 <li>
-                    <a href="#">내가 쓴글</a>
+                    <a href="i_wrote.html">내가 쓴글</a>
                 </li>
                 <li>
                     <a href="writing.html">글쓰기</a>
@@ -55,7 +59,7 @@
             <input class="input_field" type="text" placeholder="제목을 입력해주세요."><br>
             <textarea class="textarea_field" placeholder="내용을 입력해주세요."></textarea><br>
             <button class="write_button2">취소</button>
-            <button class="write_button1">등록</button>
+            <button class="write_button1" onclick="location.href='notice_board.html'">등록</button>
         </div>
         <!-- 
     <article>
