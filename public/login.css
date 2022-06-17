@@ -1,5 +1,5 @@
 * {
-    text-decoration: none; 
+    text-decoration: none;
 }
 
 body {
@@ -43,9 +43,11 @@ body {
 }
 
 .icon {
-    height: 100px;
-    width: 100px;
-    border-radius: 50%;
+    height: 190px;
+    width: 160px;
+    position: relative;
+    right: 25px;
+    bottom: 20px;
 }
 
 .title {
