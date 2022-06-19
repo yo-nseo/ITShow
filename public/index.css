@@ -143,7 +143,7 @@ div.login button:hover {
 div.focus {
     position: relative;
     width: 100%;
-    height: 439px;
+    height: 499px;
     cursor: pointer;
 }
 
@@ -156,7 +156,7 @@ div.focus ul li {
 
 div.focus ul li img {
     width: 100%;
-    height: 400px;
+    height: 460px;
 }
 
 @keyframes isBlock {
@@ -218,7 +218,7 @@ div.circle .circleColor {
 
 div.message {
     position: absolute;
-    bottom: -180px;
+    bottom: -260px;
     left: 50%;
     transform: translateX(-50%);
     width: 1174px;
@@ -598,8 +598,10 @@ div.Speak_item_radius_img img {
     height: 100%;
 }
 
-div.new_Speak_item p {
+div.new_Speak_item a p {
     line-height: 2;
+    text-align: center;
+    color: #000;
 }
 
 div.new_Speak_item p:last-child {
