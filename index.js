@@ -3,6 +3,7 @@ const app = express();
 const path = require('path');
 const userRouter = require('./router/user.js');
 const port = 5000;
+const qs = require('querystring');
 
 app.use(express.json()); 
 app.use(express.urlencoded({extended : true})) ;
@@ -42,3 +43,25 @@ app.post('/login', function(request, response) {
         response.end();
     }
 });
+
+app.post('/insert', (req, res)=>{
+    var title = req.body.title;
+    var content = req.body.content;
+    // form 태그로부터 제목, 내용 값을 전달받습니다.
+    
+    const author = 'test';
+
+
+    let sql = 'INSERT INTO `itshow_db`.`board` (`b_title`, `b_content`) VALUES ("?", "?");'
+
+
+    let params = [title, content];
+    console.log('params ' + params);
+    
+
+    connection.query(sql, params, function(err) { // sql를 실행하고 VALUES 으로 params를 보낸다.
+        if(err) console.log('query is not excuted. insert fail...\n' + err);
+        else res.redirect('/'); //오류 미 발생시 /list 돌아간다.
+    });
+
+})

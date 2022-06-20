@@ -41,23 +41,29 @@
     <div style="margin-top:90px">
 
         <div class="form_box">
-            <center>
-                <h2>게시물 올리기</h2>
-            </center>
-            <br>
-            <select class="form-control" style="margin-bottom: 20px;" id="menu" name="menu" required>
-                <option value="" disabled selected>메뉴</option>
-                <option value="Thrill">스릴러</option>
-                <option value="Romance">로맨스</option>
-                <option value="Horror">호러</option>
-                <option value="other">...</option>
-            </select>
+            <form action="/insert" method="post">
+                <center>
+                    <h2>게시물 올리기</h2>
+                </center>
+                <br>
+                <!-- <select class="form-control" style="margin-bottom: 20px;" id="menu" name="menu" required>
+                    <option value="" disabled selected>메뉴</option>
+                    <option value="Thrill">스릴러</option>
+                    <option value="Romance">로맨스</option>
+                    <option value="Horror">호러</option>
+                    <option value="other">...</option>
+                </select> -->
 
-            <input class="input_field" type="text" placeholder="책 이름 입력"><br>
-            <input class="input_field" type="text" placeholder="제목을 입력해주세요."><br>
-            <textarea class="textarea_field" placeholder="내용을 입력해주세요."></textarea><br>
-            <button class="write_button2">취소</button>
-            <button class="write_button1" onclick="location.href='notice_board.html'">등록</button>
+                <!-- <input class="input_field" type="text" name="date"><br> -->
+                <!-- <p><input type="text" name="title"  placeholder="제목을 입력해주세요."></p><br> -->
+                <input class="title" type="text" name="title" placeholder="제목을 입력해주세요."><br>
+                <!-- <p><textarea name="writ"></textarea></p> -->
+                <textarea class="content" name="content" placeholder="내용을 입력해주세요."></textarea><br>
+                <button class="write_button2">취소</button>
+                <!-- <p><input type="submit"></p>
+                </form> -->
+                <button type="submit" class="write_button1" onclick="location.href='notice_board.html'">등록</button>
+            </form>
         </div>
         <!-- 
     <article>
