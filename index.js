@@ -53,20 +53,17 @@ app.post('/insert', (req, res)=>{
     var title = req.body.title;
     var content = req.body.content;
     // form 태그로부터 제목, 내용 값을 전달받습니다.
-    
-    const author = 'test';
 
-
-    let sql = 'INSERT INTO `itshow_db`.`board` (`b_title`, `b_content`) VALUES ("?", "?");'
+    let sql = 'INSERT INTO `itshow_db`.`board` (b_title, b_content) VALUES (?, ?);'
 
 
     let params = [title, content];
     console.log('params ' + params);
     
 
-    connection.query(sql, params, function(err) { // sql를 실행하고 VALUES 으로 params를 보낸다.
+    connection.query(sql, [title, content], function(err) { // sql를 실행하고 VALUES 으로 params를 보낸다.
         if(err) console.log('query is not excuted. insert fail...\n' + err);
-        else res.redirect('/'); //오류 미 발생시 /list 돌아간다.
+        else res.redirect('/notice_board'); //오류 미 발생시 /list 돌아간다.
     });
 
 })
@@ -74,13 +71,13 @@ app.post('/insert', (req, res)=>{
 app.get('/notice_board', function(req, res, next){
     let sql = "SELECT * FROM `itshow_db`.`board`";
 
-    res.render('notice_board.ejs');
+    // res.render('notice_board.ejs');
 
-    // connection.query(sql, (err, rows) => {
-    //     if (err) {
-    //         console.error("query error \n" + err);
-    //     } else {
-    //         res.render('board.ejs', {title: "DB연동 DEMO", rows: rows});
-    //     }
-    // });
+    connection.query(sql, (err, rows) => {
+        if (err) {
+            console.error("query error \n" + err);
+        } else {
+            res.render('notice_board.ejs', {rows: rows});
+        }
+    });
 });
