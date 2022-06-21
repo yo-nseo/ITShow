@@ -53,8 +53,8 @@
                 
                 <% for (let row of rows) { %>
                     <tr>
-                        <td class="num_td"><%= row.b_num %></td>
-                        <td><%= row.b_title %></td>
+                        <td><%= row.b_num %></td>
+                        <td><a href='/read/${row.b_num}'><%= row.b_title %></a></td>
                         <td>2022-06-21</td>
                     </tr>
                 <% } %>

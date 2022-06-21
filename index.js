@@ -46,9 +46,6 @@ app.post('/login', function(request, response) {
 });
 
 
-app.get('/notice_board', (req, res)=>{
-    res.sendFile(path.resolve("public/notice_board.html"))
-})
 app.get('/writing', (req, res)=>{
     res.sendFile(path.resolve("public/writing.html"))
 })
@@ -78,6 +75,20 @@ app.post('/insert', (req, res)=>{
 
 app.get('/notice_board', function(req, res, next){
     let sql = "SELECT * FROM `itshow_db`.`board`";
+
+    // res.render('notice_board.ejs');
+
+    connection.query(sql, (err, rows) => {
+        if (err) {
+            console.error("query error \n" + err);
+        } else {
+            res.render('notice_board.ejs', {rows: rows});
+        }
+    });
+});
+
+app.get('/read/:b_num', function(req, res, next){
+    let sql = "SELECT * FROM `itshow_db`.`board` WHERE b_num=?";
 
     // res.render('notice_board.ejs');
 
