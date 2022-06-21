@@ -640,7 +640,7 @@ div.footer-content a{
 }
 
 .form_box textarea {
-    height: 250px;
+    height: 330px;
     resize: none;
 }
 
@@ -682,7 +682,7 @@ div.form_box button {
     margin: 5px;
     margin-left: 240px;
     margin-right: 250px;
-    height: 500px;
+    height: 480px;
 }
 
 .input_field {
@@ -690,3 +690,13 @@ div.form_box button {
 
 }
 
+.title{
+    width: 768px;
+    height: 30px;
+}
+
+textarea{
+    width: 768px;
+    
+    margin-top: 10px;
+}
