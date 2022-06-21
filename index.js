@@ -22,6 +22,7 @@ app.listen(port, ()=>console.log(`Server Start. Port : ${port}`))
 const mysql = require('./database')();
 const connection = mysql.init();
 mysql.db_open(connection); 
+// connection.connect();
 
 app.post('/login', function(request, response) {
     var username = request.body.id;
@@ -44,6 +45,10 @@ app.post('/login', function(request, response) {
     }
 });
 
+app.get('/writing', (req, res)=>{
+    res.sendFile(path.resolve("public/writing.html"))
+})
+
 app.post('/insert', (req, res)=>{
     var title = req.body.title;
     var content = req.body.content;
@@ -65,3 +70,17 @@ app.post('/insert', (req, res)=>{
     });
 
 })
+
+app.get('/notice_board', function(req, res, next){
+    let sql = "SELECT * FROM `itshow_db`.`board`";
+
+    res.render('notice_board.ejs');
+
+    // connection.query(sql, (err, rows) => {
+    //     if (err) {
+    //         console.error("query error \n" + err);
+    //     } else {
+    //         res.render('board.ejs', {title: "DB연동 DEMO", rows: rows});
+    //     }
+    // });
+});
