@@ -45,9 +45,17 @@ app.post('/login', function(request, response) {
     }
 });
 
+
+app.get('/notice_board', (req, res)=>{
+    res.sendFile(path.resolve("public/notice_board.html"))
+})
 app.get('/writing', (req, res)=>{
     res.sendFile(path.resolve("public/writing.html"))
 })
+app.get('/i_wrote', (req, res)=>{
+    res.sendFile(path.resolve("public/i_wrote.html"))
+})
+
 
 app.post('/insert', (req, res)=>{
     var title = req.body.title;
