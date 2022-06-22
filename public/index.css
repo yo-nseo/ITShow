@@ -121,7 +121,6 @@ div.search {
 
 div.login {
     float: right;
-    margin-right: 10px;
     color: #fff;
     letter-spacing: 10px;
 }
@@ -669,7 +668,7 @@ div.form_box button {
     width: 60px;
     height: 30px;
     background-color: #62492b;
-    border: none;
+    border: none;       
     color: #ffffff;
     border-radius: 25px;
     padding: 2px 8px;
