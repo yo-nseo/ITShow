@@ -65,7 +65,7 @@ app.post('/insert', (req, res)=>{
     let sql = 'INSERT INTO `itshow_db`.`board` (b_title, b_content) VALUES (?, ?);'
 
 
-    let params = [title, content];
+    var params = [title, content];
     console.log('params ' + params);
     
 
@@ -92,14 +92,15 @@ app.get('/notice_board', function(req, res, next){
 
 app.get('/read/:b_num', function(req, res, next){
     let sql = "SELECT * FROM `itshow_db`.`board` WHERE b_num=?";
+    var num = req.params.b_num;
 
     // res.render('notice_board.ejs');
 
-    connection.query(sql, (err, rows) => {
+    connection.query(sql, [num], (err, rows) => {
         if (err) {
             console.error("query error \n" + err);
         } else {
-            res.render('notice_board.ejs', {rows: rows});
+            res.render('read.ejs', {rows: rows[0]});
         }
     });
 });
