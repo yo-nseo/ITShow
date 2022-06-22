@@ -53,7 +53,17 @@ app.get('/writing', (req, res)=>{
     res.sendFile(path.resolve("public/writing.html"))
 })
 app.get('/i_wrote', (req, res)=>{
-    res.sendFile(path.resolve("public/i_wrote.html"))
+    let sql = "SELECT * FROM `itshow_db`.`board`";
+
+    // res.render('notice_board.ejs');
+
+    connection.query(sql, (err, rows) => {
+        if (err) {
+            console.error("query error \n" + err);
+        } else {
+            res.render('notice_board.ejs', {rows: rows});
+        }
+    });
 })
 
 
