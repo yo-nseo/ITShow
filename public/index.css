@@ -680,9 +680,11 @@ div.form_box button {
 
 .form_box {
     margin: 5px;
-    margin-left: 240px;
-    margin-right: 250px;
+    width: 790px;
     height: 480px;
+    position: absolute;
+    align-items: center;
+    left: 18%;
 }
 
 .input_field {
